@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block title %}
+	Derslik Ekle
+{% endblock %}
+{% block content %}
+	<h1>Derslik Ekle</h1>
+    <form method="post">
+        <label class="form-label" for="name">Derslik Adı</label>
+        <input type="text" name="name" class="form-control mb-2" placeholder="Lütfen bir derslik ismi giriniz" maxlength="255" minlength="2" required>
+        <label for="code">Derslik Kodu</label>
+        <input type="text" name="code" class="form-control mb-4" placeholder="En fazla 10 haneli olacak şekilde derslik kodu giriniz" maxlength="10" minlength="1" required>
+        <button type="submit" class="btn btn-primary float-end">Ekle</button>
+    </form>
+{% endblock %}
